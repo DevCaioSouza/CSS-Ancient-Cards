@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title {
+    background-color: #964dc0;
+    width: 400px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 10%;
+    font-size: 48px;
+    font-family: "Josefin sans";
+}
+
+body{
+    background-color: #66ffc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.container{
+    
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .box{
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    height: 400px;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.4);
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .box::before{
+    position: absolute;
+    content: "";
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #964dc0;
+    background-image: linear-gradient(315deg, #7d4b9b 0%, #8e53a5 74% );
+    transition: 0.4s;
+}
+
+.container .box:hover::before{
+    top: 50% 
+}
+
+.container .box .imgbox{
+    width: 100%;
+    height: 50%;
+}
+
+.container .box .imgbox img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box h1{
+    margin-top: 10px;
+    font-family: "Josefin sans";
+    font-size: 24px;
+    position: relative;
+}
+
+.container .box p{
+    margin-top: 10px;
+    font-family: "Josefin sans";
+    font-size: 18px;
+    position: relative;
+}
+
+
+
+
+
+
+
