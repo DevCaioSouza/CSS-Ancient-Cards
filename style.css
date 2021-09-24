@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,16 +7,80 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+li, a, button {
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    
+    
+    margin-bottom: 75px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+    background-color: rgb(243, 228, 215);
+    
+}
+
+header img{
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:gray;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: rgb(243, 228, 215);
+}
+
+button:hover {
+    background-color: grey;
+}
+
 #title {
-    background-color: #964dc0;
+    
+    
     width: 400px;
-    color: white;
+    color: rgb(204, 135, 74);
     text-align: center;
-    border: 2px solid white;
     padding: 10px 15px;
-    border-radius: 10%;
+    border-radius: 10px;
+    
     font-size: 48px;
     font-family: "Josefin sans";
+    margin-bottom: -90px;
 }
 
 body{
@@ -30,7 +96,7 @@ body{
 
 .container{
     
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 20px;
@@ -38,12 +104,12 @@ body{
 }
 
 .container .box{
-    background-color: white;
+    background-color: rgb(243, 228, 215);
     border: 1px solid black;
     position: relative;
-    height: 400px;
+    height: 350px;
     box-shadow: 0 30px 30px rgba(0,0,0,0.4);
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 10px;
     text-align: center;
 }
@@ -55,9 +121,9 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #964dc0;
-    background-image: linear-gradient(315deg, #7d4b9b 0%, #8e53a5 74% );
-    transition: 0.4s;
+    background-color: rgb(204, 135, 74);
+    
+    transition: 0.5s;
 }
 
 .container .box:hover::before{
@@ -89,9 +155,35 @@ body{
     position: relative;
 }
 
+.container{
+    margin: auto;
+}
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+ul{
+    list-style: none;
+}
 
+.footer {
+    background-color: rgb(243, 228, 215) ;
+    
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
 
 
 
